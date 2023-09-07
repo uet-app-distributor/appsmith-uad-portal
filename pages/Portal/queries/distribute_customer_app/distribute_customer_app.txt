@@ -1,0 +1,18 @@
+{
+	"app_name": {{ input_app_name.text }},
+	"app_owner": {{ input_app_owner.text }},
+	"description": {{ input_app_description.text }},
+	"github_user": {{  input_github_user.text}},
+	"github_repo": {{ input_github_repos.selectedOptionValue }},
+	"frontend": {
+		"image": {{ input_fe_runtime.selectedOptionValue }},
+		"version": {{ input_fe_runtime_version.text }}
+	},
+	"backend": {
+		"image": {{ input_be_runtime.selectedOptionValue }},
+		"version": {{ input_be_runtime_version.text }}
+	},
+	"database": {
+		"image": {{ input_db.selectedOptionValue }}
+	}
+}
