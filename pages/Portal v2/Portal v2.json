@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Portal",
-    "slug": "portal",
+    "name": "Portal v2",
+    "slug": "portal-v2",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 780,
+          "bottomRow": 900,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,7 +29,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Portal_get_github_repos",
+              "id": "Portal v2_get_github_repos",
               "name": "get_github_repos",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -42,7 +42,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Portal",
+        "id": "Portal v2",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -53,5 +53,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "64f585d27205895df7d08c21_64f585d27205895df7d08c23"
+  "gitSyncId": "64f70a3eb27ee16e2946c100_64fc2caeb27ee16e2946c129"
 }

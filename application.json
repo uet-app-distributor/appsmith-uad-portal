@@ -3,6 +3,10 @@
     {
       "id": "Portal",
       "isDefault": true
+    },
+    {
+      "id": "Portal v2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -11,8 +15,8 @@
   "unpublishedApplicationDetail": {
     "navigationSetting": {
       "showNavbar": true,
-      "orientation": "side",
-      "navStyle": "sidebar",
+      "orientation": "top",
+      "navStyle": "inline",
       "position": "static",
       "itemStyle": "text",
       "colorStyle": "theme",
@@ -27,6 +31,11 @@
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,
+  "embedSetting": {
+    "height": "720px",
+    "width": "1024px",
+    "showNavigationBar": true
+  },
   "collapseInvisibleWidgets": true,
   "isManualUpdate": false,
   "deleted": false

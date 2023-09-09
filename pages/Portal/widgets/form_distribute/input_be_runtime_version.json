@@ -27,7 +27,7 @@
     ],
     "isLoading": false,
     "borderRadius": "0px",
-    "originalBottomRow": 57,
+    "originalBottomRow": 56,
     "mobileBottomRow": 30,
     "widgetName": "input_be_runtime_version",
     "dynamicPropertyPathList": [
@@ -61,7 +61,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 23,
     "responsiveBehavior": "fill",
-    "originalTopRow": 50,
+    "originalTopRow": 49,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
