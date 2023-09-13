@@ -9,8 +9,9 @@
 	"enabled_database": {{ enable_db.isChecked }},
 	"frontend": {
 		"image": {{ input_fe_runtime.selectedOptionValue }},
-		"version": {{ input_fe_runtime_version.text }}
-	},
+		"version": {{ input_fe_runtime_version.text }},
+		"env": {{ input_fe_env_vars.text }}
+	},	
 	"backend": {
 		"image": {{ input_be_runtime.selectedOptionValue }},
 		"version": {{ input_be_runtime_version.text }}

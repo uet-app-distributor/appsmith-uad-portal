@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 900,
+          "bottomRow": 750,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,12 +29,12 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Portal v2_get_github_repos",
-              "name": "get_github_repos",
+              "id": "Portal v2_get_fe_github_repos",
+              "name": "get_fe_github_repos",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                " input_github_user.text "
+                " input_fe_github_user.text "
               ],
               "timeoutInMillisecond": 10000
             }

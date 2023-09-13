@@ -5,15 +5,18 @@
     "widgetName": "Button5",
     "onClick": "{{showModal('modal_fe_config');}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "dynamicPropertyPathList": [
+        {"key": "isVisible"},
+        {"key": "isDisabled"}
+    ],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
         "click",
         "submit"
     ],
-    "topRow": 37,
-    "bottomRow": 41,
+    "topRow": 24,
+    "bottomRow": 28,
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
@@ -21,17 +24,18 @@
     "animateLoading": true,
     "parentColumnSpace": 16.0263671875,
     "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 32,
+    "leftColumn": 17,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "buttonColor"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "isDisabled"}
     ],
     "text": "Configure",
-    "isDisabled": false,
+    "isDisabled": "{{ !enable_fe.isChecked }}",
     "key": "ucf6kfjw7m",
     "isDeprecated": false,
-    "rightColumn": 39,
+    "rightColumn": 24,
     "isDefaultClickDisabled": true,
     "iconName": "cog",
     "widgetId": "na1w5mk7gh",
@@ -45,11 +49,11 @@
     "isLoading": false,
     "mobileTopRow": 35,
     "responsiveBehavior": "hug",
-    "originalTopRow": 37,
+    "originalTopRow": 24,
     "disabledWhenInvalid": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 27,
-    "originalBottomRow": 41,
+    "originalBottomRow": 28,
     "buttonVariant": "SECONDARY",
     "iconAlign": "left",
     "placement": "CENTER"
