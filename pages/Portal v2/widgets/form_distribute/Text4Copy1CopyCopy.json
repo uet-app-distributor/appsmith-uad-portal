@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 5,
     "widgetName": "Text4Copy1CopyCopy",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Text",
     "iconSVG": "/static/media/icon.a47d6d5dbbb718c4dc4b2eb4f218c1b7.svg",
     "searchTags": [
@@ -24,19 +25,20 @@
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
         {"key": "borderRadius"},
-        {"key": "text"}
+        {"key": "text"},
+        {"key": "isVisible"}
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
     "text": "Frontend URL (if enabled):   https://{{ input_app_name.text }}.uet-app-distributor.site\n\nBackend URL (if enabled):   https://api-{{ input_app_name.text }}.uet-app-distributor.site",
     "key": "elmujjcors",
     "isDeprecated": false,
-    "rightColumn": 53,
+    "rightColumn": 63,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "im9lt28uit",
     "minWidth": 450,
-    "isVisible": true,
+    "isVisible": "{{ input_app_name.isValid }}",
     "fontStyle": "ITALIC",
     "textColor": "#231F20",
     "version": 1,

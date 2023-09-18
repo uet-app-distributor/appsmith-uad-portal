@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 1292,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -28,6 +28,16 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Portal v2_get_be_github_repos",
+              "name": "get_be_github_repos",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                " input_be_github_user.text "
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Portal v2_get_fe_github_repos",
               "name": "get_fe_github_repos",

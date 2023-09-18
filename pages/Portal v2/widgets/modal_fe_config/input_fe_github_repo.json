@@ -11,13 +11,14 @@
     "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "sourceData"}
+        {"key": "sourceData"},
+        {"key": "isRequired"}
     ],
     "labelTooltip": "",
     "labelStyle": "",
     "placeholderText": "Choose repo",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": "{{ enable_fe.isChecked }}",
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": "true",
@@ -33,7 +34,10 @@
     "mobileBottomRow": 22,
     "widgetName": "input_fe_github_repo",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "dynamicPropertyPathList": [
+        {"key": "isVisible"},
+        {"key": "isRequired"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 32,

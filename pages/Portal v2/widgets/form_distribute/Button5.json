@@ -5,10 +5,7 @@
     "widgetName": "Button5",
     "onClick": "{{showModal('modal_fe_config');}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "isDisabled"}
-    ],
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -28,7 +25,6 @@
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "buttonColor"},
-        {"key": "isVisible"},
         {"key": "isDisabled"}
     ],
     "text": "Configure",
@@ -40,7 +36,7 @@
     "iconName": "cog",
     "widgetId": "na1w5mk7gh",
     "minWidth": 120,
-    "isVisible": "{{ enable_fe.isChecked }}",
+    "isVisible": true,
     "recaptchaType": "V3",
     "version": 1,
     "parentId": "ui28xrevha",

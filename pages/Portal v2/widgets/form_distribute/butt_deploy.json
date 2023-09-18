@@ -5,6 +5,7 @@
     "widgetName": "butt_deploy",
     "onClick": "{{distribute_customer_app.run({}).then(() => {\n  postWindowMessage('Your app has been distributed successfully!', \"window\", \"*\");\n}).catch(() => {\n  postWindowMessage('Something went wrong :/', \"window\", \"*\");\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -21,9 +22,12 @@
     "parentColumnSpace": 20.078125,
     "dynamicTriggerPathList": [{"key": "onClick"}],
     "leftColumn": 4,
-    "dynamicBindingPathList": [{"key": "buttonColor"}],
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "isDisabled"}
+    ],
     "text": "Deploy",
-    "isDisabled": false,
+    "isDisabled": "{{ !(input_app_name.isValid && input_app_name.isValid && ( enable_be.isChecked || enable_fe.isChecked)) }}",
     "key": "ug8begaihv",
     "isDeprecated": false,
     "rightColumn": 12,

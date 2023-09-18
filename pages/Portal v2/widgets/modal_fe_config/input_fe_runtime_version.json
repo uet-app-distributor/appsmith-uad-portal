@@ -7,11 +7,14 @@
     "animateLoading": true,
     "resetOnSubmit": true,
     "leftColumn": 6,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "isRequired"}
+    ],
     "labelStyle": "",
-    "inputType": "TEXT",
+    "inputType": "NUMBER",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": "{{ enable_fe.isChecked }}",
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,
@@ -26,6 +29,7 @@
     "originalBottomRow": 21,
     "mobileBottomRow": 18,
     "widgetName": "input_fe_runtime_version",
+    "dynamicPropertyPathList": [{"key": "isRequired"}],
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -57,6 +61,7 @@
     "originalTopRow": 17,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
+    "shouldAllowAutofill": false,
     "iconAlign": "left",
     "defaultText": "",
     "minDynamicHeight": 4

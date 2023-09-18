@@ -1,20 +1,23 @@
 {
 	"app_name": {{ input_app_name.text }},
 	"app_owner": {{ input_app_owner.text }},
-	"description": {{ input_app_description.text }},
-	"github_user": {{  input_github_user.text}},
-	"github_repo": {{ input_github_repos.selectedOptionValue }},
+
 	"enabled_frontend": {{ enable_fe.isChecked }},
 	"enabled_backend": {{ enable_be.isChecked }},
 	"enabled_database": {{ enable_db.isChecked }},
 	"frontend": {
 		"image": {{ input_fe_runtime.selectedOptionValue }},
 		"version": {{ input_fe_runtime_version.text }},
+		"static_dir": {{ input_fe_static_dir.text }},
+		"github_user": {{  input_fe_github_user.text}},
+		"github_repo": {{ input_fe_github_repo.selectedOptionValue }},
 		"env": {{ input_fe_env_vars.text }}
 	},	
 	"backend": {
 		"image": {{ input_be_runtime.selectedOptionValue }},
-		"version": {{ input_be_runtime_version.text }}
+		"version": {{ input_be_runtime_version.text }},
+		"github_user": {{  input_be_github_user.text}},
+		"github_repo": {{ input_be_github_repo.selectedOptionValue }}
 	},
 	"database": {
 		"image": {{ input_db_supported_db.selectedOptionValue }}

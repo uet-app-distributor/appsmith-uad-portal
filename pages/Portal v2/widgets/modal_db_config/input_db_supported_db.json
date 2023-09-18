@@ -11,11 +11,12 @@
     "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isRequired"}
     ],
     "placeholderText": "Select option",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": "{{ enable_db.isChecked }}",
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,
@@ -29,7 +30,10 @@
     "mobileBottomRow": 13,
     "widgetName": "input_db_supported_db",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
+    "dynamicPropertyPathList": [
+        {"key": "sourceData"},
+        {"key": "isRequired"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 11,

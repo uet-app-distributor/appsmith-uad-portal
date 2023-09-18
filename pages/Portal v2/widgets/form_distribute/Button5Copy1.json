@@ -5,7 +5,7 @@
     "onClick": "{{showModal('modal_db_config');}}",
     "widgetName": "Button5Copy1",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "displayName": "Button",
     "topRow": 34,
@@ -14,7 +14,7 @@
         "submit"
     ],
     "bottomRow": 38,
-    "tooltip": "{{ !enable_db.isChecked }}",
+    "tooltip": "",
     "parentRowSpace": 10,
     "type": "BUTTON_WIDGET",
     "hideCard": false,
@@ -26,10 +26,10 @@
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "buttonColor"},
-        {"key": "tooltip"}
+        {"key": "isDisabled"}
     ],
     "text": "Configure",
-    "isDisabled": false,
+    "isDisabled": "{{ !enable_db.isChecked }}",
     "key": "ucf6kfjw7m",
     "isDeprecated": false,
     "rightColumn": 24,
@@ -37,7 +37,7 @@
     "iconName": "cog",
     "widgetId": "mdr9qubkf4",
     "minWidth": 120,
-    "isVisible": "",
+    "isVisible": true,
     "version": 1,
     "recaptchaType": "V3",
     "parentId": "ui28xrevha",

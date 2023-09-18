@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 69,
     "widgetName": "enable_db",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Checkbox",
     "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
     "searchTags": ["boolean"],
@@ -17,7 +18,8 @@
     "leftColumn": 4,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
     ],
     "labelPosition": "Right",
     "isDisabled": false,
@@ -29,7 +31,7 @@
     "widgetId": "rpcl6be6d8",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "minWidth": 450,
-    "isVisible": true,
+    "isVisible": "{{ enable_be.isChecked }}",
     "label": "Enable Database",
     "version": 1,
     "parentId": "ui28xrevha",
@@ -38,11 +40,11 @@
     "isLoading": false,
     "mobileTopRow": 65,
     "responsiveBehavior": "fill",
-    "originalTopRow": 33,
+    "originalTopRow": 34,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "defaultCheckedState": true,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 37,
+    "originalBottomRow": 38,
     "minDynamicHeight": 4
 }

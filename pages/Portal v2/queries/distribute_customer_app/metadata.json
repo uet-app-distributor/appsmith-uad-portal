@@ -27,9 +27,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"app_name\": {{ input_app_name.text }},\n\t\"app_owner\": {{ input_app_owner.text }},\n\t\"description\": {{ input_app_description.text }},\n\t\"github_user\": {{  input_github_user.text}},\n\t\"github_repo\": {{ input_github_repos.selectedOptionValue }},\n\t\"enabled_frontend\": {{ enable_fe.isChecked }},\n\t\"enabled_backend\": {{ enable_be.isChecked }},\n\t\"enabled_database\": {{ enable_db.isChecked }},\n\t\"frontend\": {\n\t\t\"image\": {{ input_fe_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_fe_runtime_version.text }},\n\t\t\"env\": {{ input_fe_env_vars.text }}\n\t},\t\n\t\"backend\": {\n\t\t\"image\": {{ input_be_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_be_runtime_version.text }}\n\t},\n\t\"database\": {\n\t\t\"image\": {{ input_db_supported_db.selectedOptionValue }}\n\t}\n}",
+      "body": "{\n\t\"app_name\": {{ input_app_name.text }},\n\t\"app_owner\": {{ input_app_owner.text }},\n\n\t\"enabled_frontend\": {{ enable_fe.isChecked }},\n\t\"enabled_backend\": {{ enable_be.isChecked }},\n\t\"enabled_database\": {{ enable_db.isChecked }},\n\t\"frontend\": {\n\t\t\"image\": {{ input_fe_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_fe_runtime_version.text }},\n\t\t\"static_dir\": {{ input_fe_static_dir.text }},\n\t\t\"github_user\": {{  input_fe_github_user.text}},\n\t\t\"github_repo\": {{ input_fe_github_repo.selectedOptionValue }},\n\t\t\"env\": {{ input_fe_env_vars.text }}\n\t},\t\n\t\"backend\": {\n\t\t\"image\": {{ input_be_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_be_runtime_version.text }},\n\t\t\"github_user\": {{  input_be_github_user.text}},\n\t\t\"github_repo\": {{ input_be_github_repo.selectedOptionValue }}\n\t},\n\t\"database\": {\n\t\t\"image\": {{ input_db_supported_db.selectedOptionValue }}\n\t}\n}",
       "bodyFormData": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -50,20 +50,22 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "  input_github_user.text",
+      "  input_be_github_user.text",
+      "  input_fe_github_user.text",
       " enable_be.isChecked ",
       " enable_db.isChecked ",
       " enable_fe.isChecked ",
-      " input_app_description.text ",
       " input_app_name.text ",
       " input_app_owner.text ",
+      " input_be_github_repo.selectedOptionValue ",
       " input_be_runtime.selectedOptionValue ",
       " input_be_runtime_version.text ",
       " input_db_supported_db.selectedOptionValue ",
       " input_fe_env_vars.text ",
+      " input_fe_github_repo.selectedOptionValue ",
       " input_fe_runtime.selectedOptionValue ",
       " input_fe_runtime_version.text ",
-      " input_github_repos.selectedOptionValue "
+      " input_fe_static_dir.text "
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

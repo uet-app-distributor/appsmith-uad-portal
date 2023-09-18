@@ -3,7 +3,7 @@
     "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
     "labelText": "Runtime",
     "topRow": 7,
-    "labelWidth": "16",
+    "labelWidth": "18",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
     "defaultOptionValue": "",
@@ -11,11 +11,12 @@
     "leftColumn": 6,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
-        {"key": "borderRadius"}
+        {"key": "borderRadius"},
+        {"key": "isRequired"}
     ],
     "placeholderText": "Select option",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": "{{ enable_be.isChecked }}",
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,
@@ -29,7 +30,10 @@
     "mobileBottomRow": 13,
     "widgetName": "input_be_runtime",
     "isFilterable": true,
-    "dynamicPropertyPathList": [{"key": "sourceData"}],
+    "dynamicPropertyPathList": [
+        {"key": "sourceData"},
+        {"key": "isRequired"}
+    ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 11,

@@ -23,6 +23,7 @@
         "Inputs"
     ],
     "isLoading": false,
+    "regex": "^[A-Za-z][A-Za-z0-9\\-]*[A-Za-z0-9]$",
     "borderRadius": "0px",
     "originalBottomRow": 12,
     "mobileBottomRow": 30,
@@ -48,6 +49,7 @@
     "isDeprecated": false,
     "rightColumn": 24,
     "widgetId": "3rnu3rin66",
+    "errorMessage": "Allow to start with [A-Za-z] and end with [A-Za-z0-9], hyphens (-) are accepted but underscores (_) or special characters. ",
     "minWidth": 450,
     "label": "Owner",
     "parentId": "ui28xrevha",

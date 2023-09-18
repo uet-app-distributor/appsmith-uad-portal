@@ -7,11 +7,14 @@
     "animateLoading": true,
     "resetOnSubmit": true,
     "leftColumn": 6,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "isRequired"}
+    ],
     "labelStyle": "",
     "inputType": "TEXT",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": "{{ enable_fe.isChecked }}",
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,
@@ -26,6 +29,7 @@
     "originalBottomRow": 31,
     "mobileBottomRow": 30,
     "widgetName": "input_fe_github_user",
+    "dynamicPropertyPathList": [{"key": "isRequired"}],
     "displayName": "Input",
     "searchTags": [
         "form",

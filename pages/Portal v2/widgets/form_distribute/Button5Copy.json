@@ -5,10 +5,7 @@
     "widgetName": "Button5Copy",
     "onClick": "{{showModal('modal_be_config');}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [
-        {"key": "isVisible"},
-        {"key": "isDisabled"}
-    ],
+    "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
     "searchTags": [
@@ -39,7 +36,7 @@
     "iconName": "cog",
     "widgetId": "aslvbwn877",
     "minWidth": 120,
-    "isVisible": "",
+    "isVisible": true,
     "recaptchaType": "V3",
     "version": 1,
     "parentId": "ui28xrevha",
