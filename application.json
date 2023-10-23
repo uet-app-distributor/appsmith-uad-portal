@@ -1,12 +1,12 @@
 {
   "pages": [
     {
-      "id": "Portal",
-      "isDefault": true
-    },
-    {
       "id": "Portal v2",
       "isDefault": false
+    },
+    {
+      "id": "Portal",
+      "isDefault": true
     }
   ],
   "viewMode": false,

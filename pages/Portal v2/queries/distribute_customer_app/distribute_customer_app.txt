@@ -1,7 +1,12 @@
 {
 	"app_name": {{ input_app_name.text }},
 	"app_owner": {{ input_app_owner.text }},
-
+	"customer_managed": {{ enable_customer_managed.isChecked }},
+	"cloud_config": {
+		"provider": {{ input_cloud_provider.selectedOptionValue }},
+		"aws_access_key_id": {{ aws_access_key_id.text != "" ? aws_access_key_id.text : ""}},
+		"aws_secret_access_key": {{ aws_secret_access_key.text != "" ? aws_secret_access_key.text : ""}},
+	},
 	"enabled_frontend": {{ enable_fe.isChecked }},
 	"enabled_backend": {{ enable_be.isChecked }},
 	"enabled_database": {{ enable_db.isChecked }},
