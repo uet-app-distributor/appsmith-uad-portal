@@ -16,6 +16,7 @@
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
+    "iconName": "key",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "showStepArrows": false,
     "isVisible": true,

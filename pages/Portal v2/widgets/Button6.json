@@ -6,7 +6,7 @@
     "topRow": 21,
     "tooltip": "",
     "type": "BUTTON_WIDGET",
-    "topRowBeforeCollapse": 17,
+    "topRowBeforeCollapse": 23,
     "animateLoading": true,
     "leftColumn": 22,
     "dynamicBindingPathList": [
@@ -18,7 +18,7 @@
     "isDisabled": false,
     "isDefaultClickDisabled": true,
     "iconName": "clipboard",
-    "bottomRowBeforeCollapse": 21,
+    "bottomRowBeforeCollapse": 27,
     "isVisible": "{{ input_app_name.isValid }}",
     "version": 1,
     "tags": ["Buttons"],

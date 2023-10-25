@@ -30,7 +30,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Frontend URL (if enabled):   https://{{ input_app_name.text }}.uet-app-distributor.site\n\nBackend URL (if enabled):   https://api-{{ input_app_name.text }}.uet-app-distributor.site",
+    "text": "Frontend URL (if enabled):   https://{{ input_app_owner.text }}-{{ input_app_name.text }}.uet-app-distributor.site\n\nBackend URL (if enabled):   https://api-{{ input_app_owner.text }}-{{ input_app_name.text }}.uet-app-distributor.site",
     "key": "elmujjcors",
     "isDeprecated": false,
     "rightColumn": 60,

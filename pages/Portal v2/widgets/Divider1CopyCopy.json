@@ -22,7 +22,7 @@
     "orientation": "horizontal",
     "strokeStyle": "solid",
     "isDeprecated": false,
-    "rightColumn": 44,
+    "rightColumn": 52,
     "widgetId": "wq5oa9qhq7",
     "capSide": 0,
     "minWidth": 450,
@@ -34,7 +34,7 @@
     "isLoading": false,
     "mobileTopRow": 2,
     "responsiveBehavior": "fill",
-    "originalTopRow": 45,
+    "originalTopRow": 10,
     "mobileLeftColumn": 28,
-    "originalBottomRow": 49
+    "originalBottomRow": 14
 }

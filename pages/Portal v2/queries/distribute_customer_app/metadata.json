@@ -27,7 +27,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"app_name\": {{ input_app_name.text }},\n\t\"app_owner\": {{ input_app_owner.text }},\n\t\"customer_managed\": {{ enable_customer_managed.isChecked }},\n\t\"cloud_config\": {\n\t\t\"provider\": {{ input_cloud_provider.selectedOptionValue }},\n\t\t\"aws_access_key_id\": {{ aws_access_key_id.text != \"\" ? aws_access_key_id.text : \"\"}},\n\t\t\"aws_secret_access_key\": {{ aws_secret_access_key.text != \"\" ? aws_secret_access_key.text : \"\"}},\n\t},\n\t\"enabled_frontend\": {{ enable_fe.isChecked }},\n\t\"enabled_backend\": {{ enable_be.isChecked }},\n\t\"enabled_database\": {{ enable_db.isChecked }},\n\t\"frontend\": {\n\t\t\"image\": {{ input_fe_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_fe_runtime_version.text }},\n\t\t\"static_dir\": {{ input_fe_static_dir.text }},\n\t\t\"github_user\": {{  input_fe_github_user.text}},\n\t\t\"github_repo\": {{ input_fe_github_repo.selectedOptionValue }},\n\t\t\"env\": {{ input_fe_env_vars.text }}\n\t},\t\n\t\"backend\": {\n\t\t\"image\": {{ input_be_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_be_runtime_version.text }},\n\t\t\"github_user\": {{  input_be_github_user.text}},\n\t\t\"github_repo\": {{ input_be_github_repo.selectedOptionValue }}\n\t},\n\t\"database\": {\n\t\t\"image\": {{ input_db_supported_db.selectedOptionValue }}\n\t}\n}",
+      "body": "{\n\t\"app_name\": {{ input_app_name.text }},\n\t\"app_owner\": {{ input_app_ownerf.text }},\n\t\"customer_managed\": {{ enable_customer_managed.isChecked }},\n\t\"cloud_config\": {\n\t\t\"provider\": {{ input_cloud_provider.selectedOptionValue }},\n\t\t\"aws_access_key_id\": {{ aws_access_key_id.text != \"\" ? aws_access_key_id.text : \"\"}},\n\t\t\"aws_secret_access_key\": {{ aws_secret_access_key.text != \"\" ? aws_secret_access_key.text : \"\"}},\n\t},\n\t\"enabled_frontend\": {{ enable_fe.isChecked }},\n\t\"enabled_backend\": {{ enable_be.isChecked }},\n\t\"enabled_database\": {{ enable_db.isChecked }},\n\t\"frontend\": {\n\t\t\"image\": {{ input_fe_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_fe_runtime_version.text }},\n\t\t\"static_dir\": {{ input_fe_static_dir.text }},\n\t\t\"github_user\": {{  input_fe_github_user.text}},\n\t\t\"github_repo\": {{ input_fe_github_repo.selectedOptionValue }},\n\t\t\"env\": {{ input_fe_env_vars.text }}\n\t},\t\n\t\"backend\": {\n\t\t\"image\": {{ input_be_runtime.selectedOptionValue }},\n\t\t\"version\": {{ input_be_runtime_version.text }},\n\t\t\"github_user\": {{  input_be_github_user.text}},\n\t\t\"github_repo\": {{ input_be_github_repo.selectedOptionValue }}\n\t},\n\t\"database\": {\n\t\t\"image\": {{ input_db_supported_db.selectedOptionValue }}\n\t}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -59,7 +59,7 @@
       " enable_db.isChecked ",
       " enable_fe.isChecked ",
       " input_app_name.text ",
-      " input_app_owner.text ",
+      " input_app_ownerf.text ",
       " input_be_github_repo.selectedOptionValue ",
       " input_be_runtime.selectedOptionValue ",
       " input_be_runtime_version.text ",
@@ -75,7 +75,7 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-09-04T07:24:41Z"
+    "createdAt": "2023-09-09T08:28:30Z"
   },
   "id": "Portal v2_distribute_customer_app",
   "deleted": false,

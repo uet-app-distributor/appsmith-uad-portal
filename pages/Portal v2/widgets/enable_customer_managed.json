@@ -1,6 +1,7 @@
 {
     "mobileBottomRow": 69,
     "widgetName": "enable_customer_managed",
+    "dynamicPropertyPathList": [{"key": "onCheckChange"}],
     "displayName": "Checkbox",
     "iconSVG": "/static/media/icon.7b004ee098ca948e952234e7baec6d11.svg",
     "searchTags": ["boolean"],
@@ -13,13 +14,14 @@
     "mobileRightColumn": 4,
     "animateLoading": true,
     "parentColumnSpace": 17.88330078125,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onCheckChange"}],
     "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"}
     ],
     "labelPosition": "Right",
+    "onCheckChange": "",
     "isDisabled": false,
     "key": "l2wn7uftx2",
     "isRequired": false,
