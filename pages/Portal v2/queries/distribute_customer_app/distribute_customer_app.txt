@@ -1,6 +1,6 @@
 {
 	"app_name": {{ input_app_name.text }},
-	"app_owner": {{ input_app_ownerf.text }},
+	"app_owner": {{ input_app_owner.text }},
 	"customer_managed": {{ enable_customer_managed.isChecked }},
 	"cloud_config": {
 		"provider": {{ input_cloud_provider.selectedOptionValue }},
@@ -22,7 +22,8 @@
 		"image": {{ input_be_runtime.selectedOptionValue }},
 		"version": {{ input_be_runtime_version.text }},
 		"github_user": {{  input_be_github_user.text}},
-		"github_repo": {{ input_be_github_repo.selectedOptionValue }}
+		"github_repo": {{ input_be_github_repo.selectedOptionValue }},
+		"env": {{ input_be_env_vars.text }}
 	},
 	"database": {
 		"image": {{ input_db_supported_db.selectedOptionValue }}
