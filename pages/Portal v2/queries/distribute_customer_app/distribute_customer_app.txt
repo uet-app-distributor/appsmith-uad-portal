@@ -6,6 +6,7 @@
 		"provider": {{ input_cloud_provider.selectedOptionValue }},
 		"aws_access_key_id": {{ aws_access_key_id.text != "" ? aws_access_key_id.text : ""}},
 		"aws_secret_access_key": {{ aws_secret_access_key.text != "" ? aws_secret_access_key.text : ""}},
+		"gcp_project_id": {{ gcp_project_id.text != "" ? gcp_project_id.text : ""}}
 	},
 	"enabled_frontend": {{ enable_fe.isChecked }},
 	"enabled_backend": {{ enable_be.isChecked }},

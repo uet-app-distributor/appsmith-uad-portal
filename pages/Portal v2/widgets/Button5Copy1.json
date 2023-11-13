@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "onClick": "{{showModal('modal_db_config');}}",
     "iconSVG": "/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",
-    "topRow": 39,
+    "topRow": 34,
     "tooltip": "",
     "type": "BUTTON_WIDGET",
     "topRowBeforeCollapse": 41,
@@ -40,7 +40,7 @@
         "click",
         "submit"
     ],
-    "bottomRow": 43,
+    "bottomRow": 38,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 43,
