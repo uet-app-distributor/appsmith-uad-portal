@@ -10,7 +10,7 @@
         "label"
     ],
     "topRow": 74,
-    "bottomRow": 87,
+    "bottomRow": 90,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Note:\n\n\t- The project must exist and being assigned an active Billing Account.\n\t  Reference: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n\t\n\t- Grant Editor role to this Service Account: github-actions-runner@uet-app-distributor.iam.gserviceaccount.com\n\t  Reference: https://cloud.google.com/iam/docs/grant-role-console",
+    "text": "Note:\n\n\t- The project must exist and being assigned an active Billing Account.\n\t  Reference: https://cloud.google.com/billing/docs/how-to/modify-project#enable_billing_for_a_project\n\t\n\t- Grant Editor role to this Service Account: github-actions-runner@uet-app-distributor.iam.gserviceaccount.com\n\t  Reference: https://cloud.google.com/iam/docs/grant-role-console\n\t\n\t- Make sure to enable Google Compute Engine API.",
     "key": "elmujjcors",
     "isDeprecated": false,
     "rightColumn": 43,
@@ -54,7 +54,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 87,
+    "originalBottomRow": 90,
     "fontSize": "0.875rem",
     "minDynamicHeight": 4
 }

@@ -51,7 +51,7 @@
     "rightColumn": 56,
     "widgetId": "ssl0pohcxf",
     "minWidth": 450,
-    "label": "Environment file",
+    "label": "Environment file (optional)",
     "parentId": "tsjynpi8ir",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
