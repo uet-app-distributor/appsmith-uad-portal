@@ -45,7 +45,7 @@
     "dynamicTriggerPathList": [],
     "labelPosition": "Left",
     "labelTextColor": "#3d3d3d",
-    "sourceData": "[\n  {\n    \"name\": \"NodeJS\",\n    \"code\": \"node\"\n  },\n  {\n    \"name\": \"Django\",\n    \"code\": \"django\"\n  }\n]",
+    "sourceData": "[\n  {\n    \"name\": \"NodeJS\",\n    \"code\": \"node\"\n  }\n]",
     "key": "jzfnzcu3nb",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
